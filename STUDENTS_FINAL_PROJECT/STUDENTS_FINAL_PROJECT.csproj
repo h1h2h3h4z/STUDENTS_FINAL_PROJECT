@@ -46,6 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINS.cs" />
+    <Compile Include="COURSES.cs" />
+    <Compile Include="Dashboardinformation.cs" />
+    <Compile Include="ENROLLEMENT.cs" />
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Role.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +70,89 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentDetail Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDetail Form.Designer.cs">
+      <DependentUpon>StudentDetail Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentPage.Designer.cs">
+      <DependentUpon>StudentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTS.cs" />
+    <Compile Include="STUDENT_LOGIN.cs" />
+    <Compile Include="STUDENT_PAGE.cs" />
+    <Compile Include="TeacherPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherPage.Designer.cs">
+      <DependentUpon>TeacherPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TEACHERS.cs" />
+    <Compile Include="TEACHER_PAGE.cs" />
+    <Compile Include="UCAdminregister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdminregister.Designer.cs">
+      <DependentUpon>UCAdminregister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCcourses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCcourses.Designer.cs">
+      <DependentUpon>UCcourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCdashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCdashboard.Designer.cs">
+      <DependentUpon>UCdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCenrollement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCenrollement.Designer.cs">
+      <DependentUpon>UCenrollement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCiamstudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCiamstudent.Designer.cs">
+      <DependentUpon>UCiamstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCiamteacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCiamteacher.Designer.cs">
+      <DependentUpon>UCiamteacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStudents.Designer.cs">
+      <DependentUpon>UCStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCteachers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCteachers.Designer.cs">
+      <DependentUpon>UCteachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCuser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCuser.Designer.cs">
+      <DependentUpon>UCuser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Role.resx">
       <DependentUpon>Role.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,7 +164,44 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentDetail Form.resx">
+      <DependentUpon>StudentDetail Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentPage.resx">
+      <DependentUpon>StudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherPage.resx">
+      <DependentUpon>TeacherPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAdminregister.resx">
+      <DependentUpon>UCAdminregister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCcourses.resx">
+      <DependentUpon>UCcourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCdashboard.resx">
+      <DependentUpon>UCdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCenrollement.resx">
+      <DependentUpon>UCenrollement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCiamstudent.resx">
+      <DependentUpon>UCiamstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCiamteacher.resx">
+      <DependentUpon>UCiamteacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStudents.resx">
+      <DependentUpon>UCStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCteachers.resx">
+      <DependentUpon>UCteachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCuser.resx">
+      <DependentUpon>UCuser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +214,129 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-concept-with-dumbbells-frame_23-2148531434.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-concept-with-dumbbells-frame_23-21485314341.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492531739-icon-sets-school-outline-hand-drawn-iconfinder27_83186.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492531739-icon-sets-school-outline-hand-drawn-iconfinder27_83186 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_person_user_man_2839.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130manstudent2_100617.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492531739-icon-sets-school-outline-hand-drawn-iconfinder27_83186 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10219manteacherlightskintone_110630.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-outlined-padlock-symbol-for-security-interface_icon-icons.com_57803.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_210618714_u6VAPB1UEYSisqMzQAJomasWDM2Ae4uO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486503785-authorisation-lock-padlock-password-privacy-safe-security_81267.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\university_cap_icon-icons.com_66109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pi7_university_cap_icon-icons.com_66109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pi7_university_cap_icon-icons.com_66109__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp_Image_2025-02-11_at_7.38.20_AM-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teacher-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courses-icon-15337.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courses-icon-15337 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courses-icon-15337 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enrollment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teacher-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-96 %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stdbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blog_Thumbnail_class-17 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52355.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yng.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4cQ.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
